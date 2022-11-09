@@ -1,0 +1,30 @@
+MODEL:
+  DEVICE: 'cuda'
+  BACKBONE: 'cnn'
+  NAME: 'se_resnext50'
+  PRETRAIN_PATH: '/home/nkjcqvcpi/.cache/torch/hub/checkpoints/se_resnext50_32x4d-a260b3a4.pth'
+  CENTER_LOSS: False
+  WEIGHT_REGULARIZED_TRIPLET: True
+
+DATASETS:
+  NAMES: 'KCrossASRD'
+  ROOT_DIR: '/cache'
+
+DATALOADER:
+  NUM_INSTANCE: 4
+
+SOLVER:
+  OPTIMIZER_NAME: 'SGD'
+  MAX_EPOCHS: 100
+  BASE_LR: 1e-2
+  STEPS: [40, 80]
+  WARMUP_FACTOR: 0.01
+  WARMUP_ITERS: 10
+  CHECKPOINT_PERIOD: 100
+  LOG_PERIOD: 20
+  EVAL_PERIOD: 5
+  IMS_PER_BATCH: 64
+  LR_SCHEDULER: 'warmup'
+
+TEST:
+  IMS_PER_BATCH: 4

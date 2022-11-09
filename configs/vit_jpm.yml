@@ -1,0 +1,51 @@
+MODEL:
+  PRETRAIN_CHOICE: '' # imagenet
+  PRETRAIN_PATH: '/home/nkjcqvcpi/.cache/torch/hub/checkpoints/jx_vit_base_p16_224-80ecf9dd.pth'
+  METRIC_LOSS_TYPE: 'triplet'
+  IF_LABELSMOOTH: False
+  IF_WITH_CENTER: False
+  BACKBONE: 'transformer'
+  NO_MARGIN: True
+  NAME: 'vit_base_patch16_224_TransReID'
+  STRIDE_SIZE: [16, 16]
+  JPM: True
+  RE_ARRANGE: True
+
+INPUT:
+  SIZE_TRAIN: [256, 256]
+  SIZE_TEST: [256, 256]
+  PROB: 0.5 # random horizontal flip
+  RE_PROB: 0.5 # random erasing
+  PADDING: 10
+  PIXEL_MEAN: [0.5, 0.5, 0.5]
+  PIXEL_STD: [0.5, 0.5, 0.5]
+
+DATASETS:
+  NAMES: 'KCrossASRD'
+  ROOT_DIR: '/cache'
+
+DATALOADER:
+  SAMPLER: 'softmax_triplet'
+  NUM_INSTANCE: 4
+  NUM_WORKERS: 8
+
+SOLVER:
+  OPTIMIZER_NAME: 'SGD'
+  MAX_EPOCHS: 100
+  BASE_LR: 0.008
+  IMS_PER_BATCH: 64
+  WARMUP_METHOD: 'linear'
+  LARGE_FC_LR: False
+  CHECKPOINT_PERIOD: 100
+
+  EVAL_PERIOD: 5
+  WEIGHT_DECAY:  1e-4
+  WEIGHT_DECAY_BIAS: 1e-4
+  BIAS_LR_FACTOR: 2
+
+TEST:
+  EVAL_ONLY: False
+  IMS_PER_BATCH: 256
+  RE_RANKING: False
+  NECK_FEAT: 'before'
+  FEAT_NORM: True
