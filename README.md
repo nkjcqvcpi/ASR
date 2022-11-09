@@ -33,14 +33,16 @@ Reference method: [AGW](https://github.com/mangye16/ReID-Surveye) and [TransReID
 
 ## Dataset
 
-If you are interested in ASR, you can download a subset of LSASRD here for a glance:
+[//]: # (If you are interested in ASR, you can download a subset of LSASRD here for a glance:)
 
-- [BaiduDisk](), [GoogleDrive]().
+[//]: # ()
+[//]: # (- [BaiduDisk]&#40;&#41;, [GoogleDrive]&#40;&#41;.)
 
-**If you want the whole dataset, you should follow the steps:**
+[//]: # ()
+[//]: # (**If you want the whole dataset, you should follow the steps:**)
 
-- Read and Sign the [Database Release Agreement](AGREEMENT.md).
-- Submit the document to lei_houtong@stu.hqu.edu.cn or jqzhu@hqu.edu.cn.
+- Download and Sign the [Database Release Agreement](LSASRD%20RELEASE%20AGREEMENT.pdf).
+- Submit the document to [lei_houtong@stu.hqu.edu.cn]() or jqzhu@hqu.edu.cn.
 - Download dataset from the link received from us by e-mail.
 
 ## Acknowledgement
