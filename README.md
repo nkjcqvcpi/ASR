@@ -31,7 +31,7 @@ The LSASRD is a challenging dataset established for anime style recognition. The
 
 Reference method: [AGW](https://github.com/mangye16/ReID-Surveye) and [TransReID](https://github.com/damo-cv/TransReID)
 
-## Dataset
+## Dataset Download
 
 [//]: # (If you are interested in ASR, you can download a subset of LSASRD here for a glance:)
 
@@ -41,9 +41,7 @@ Reference method: [AGW](https://github.com/mangye16/ReID-Surveye) and [TransReID
 [//]: # ()
 [//]: # (**If you want the whole dataset, you should follow the steps:**)
 
-- Download and Sign the [LSASRD Release Agreement](LSASRD%20RELEASE%20AGREEMENT.pdf).
-- Submit the document to [lei_houtong@stu.hqu.edu.cn]() or jqzhu@hqu.edu.cn.
-- Download dataset from the link received from us by e-mail.
+Please **Sign** the [LSASRD Release Agreement](LSASRD%20RELEASE%20AGREEMENT.pdf) and **Send** to lei_houtong[@]stu.hqu.edu.cn OR jqzhu[@]hqu.edu.cn.
 
 ## Acknowledgement
 
