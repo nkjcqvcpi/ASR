@@ -41,7 +41,7 @@ Reference method: [AGW](https://github.com/mangye16/ReID-Surveye) and [TransReID
 [//]: # ()
 [//]: # (**If you want the whole dataset, you should follow the steps:**)
 
-Please **Sign** the [LSASRD Release Agreement](LSASRD%20RELEASE%20AGREEMENT.pdf) and **Send** to lei_houtong[@]stu.hqu.edu.cn OR jqzhu[@]hqu.edu.cn.
+Please **Sign** the [LSASRD Release Agreement](LSASRD%20RELEASE%20AGREEMENT.pdf) and **Send** to lei_houtong[at]stu.hqu.edu.cn OR jqzhu[at]hqu.edu.cn.
 
 ## Acknowledgement
 
